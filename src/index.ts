@@ -13,8 +13,10 @@
 
 import { isBusinessEmptyString, isUndefined } from 'a-type-of-js';
 
-/** # 为节点元素设置标准样式
- *
+/**
+ * ## 为节点元素设置标准样式
+ * @param node 将设置样式的元素节点
+ * @param style 将设置的新样式
  */
 export function setStyle(
   node: HTMLElement | HTMLInputElement,
@@ -26,7 +28,11 @@ export function setStyle(
   );
 }
 
-/**  移除样式  */
+/**
+ * ## 移除样式
+ * @param node 元素节点
+ * @param style 要移除的样式名称
+ */
 export function removeStyle(
   node: HTMLElement | HTMLInputElement,
   style: string[],

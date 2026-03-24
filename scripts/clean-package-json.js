@@ -2,7 +2,7 @@ import {
   pathJoin,
   readFileToJsonSync,
   getDirectoryBy,
-  writeJsonFile,
+  writeJsonFileSync,
 } from 'a-node-tools';
 
 // 原始 package.json 内容
@@ -18,7 +18,7 @@ const dependencies = packageJson.dependencies;
 ].forEach(key => delete packageJson[key]);
 const esPrefix = 'es'; // es 前缀
 const cjsPrefix = 'cjs'; // cjs 前缀
-const dtsPrefix = 'es/src'; // 类型文件的前缀
+const dtsPrefix = 'es/types'; // 类型文件的前缀
 // 查看当前打包 dist 文件路径
 const distParentPath = getDirectoryBy('dist', 'directory');
 
@@ -30,9 +30,9 @@ packageJson = {
   author: {
     name: '泥豆君',
     email: 'Mr.MudBean@outlook.com',
-    url: 'https://earthnut.dev',
+    url: 'https://lmssee.com',
   },
-  description: '设置行内样式',
+  description: '设置 HTML 元素节点行内样式',
   sideEffects: false, // 核心：开启 Tree Shaking
   license: 'MIT',
   files: [esPrefix, cjsPrefix, 'LICENSE', 'README.md'],
@@ -50,7 +50,7 @@ packageJson = {
     '行内样式',
     '简单写入样式',
   ],
-  homepage: 'https://earthnut.dev/npm/a-element-inline-style',
+  homepage: 'https://lmssee.com/npm/a-element-inline-style',
   dependencies,
   bugs: {
     url: 'https://github.com/MrMudBean/a-element-inline-style/issues',
@@ -75,5 +75,5 @@ packageJson = {
   // 整理打包后 package.json 文件路径
   const distPackagePath = pathJoin(distParentPath, './dist/package.json');
   // 写入新的 packages.json 文件
-  writeJsonFile(distPackagePath, packageJson);
+  writeJsonFileSync(distPackagePath, packageJson);
 }

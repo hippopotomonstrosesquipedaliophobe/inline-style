@@ -3,11 +3,8 @@
   "compilerOptions": {
     "emitDeclarationOnly": true,
     "declaration": true,
-    "declarationDir": "dist/es"
+    "rootDir": "src",
+    "declarationDir": "dist/es/types"
   },
-  "exclude": [
-    "node_modules",
-    "test",
-    "dist"
-  ]
+  "exclude": ["node_modules", "test", "dist"]
 }

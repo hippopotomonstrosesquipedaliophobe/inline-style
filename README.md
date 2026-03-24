@@ -1,4 +1,4 @@
-# a-element-inline-style
+# a element inline style
 
 一个简单的为 html 原属节点设置行内样式和移除行内样式的（两）函数
 
@@ -32,7 +32,3 @@ removeStyle(document.body, ['width', '--custom-width']);
 ```
 
 属性命名请使用*小驼峰*
-
-## 文档
-
-参见 [earthnut.dev](https://earthnut.dev/npm/a-element-inline-style)
