@@ -1,7 +1,7 @@
 {
+  "name": "@mudbean/inline-style",
+  "version": "1.0.4",
   "type": "module",
-  "version": "1.0.2",
-  "name": "a-element-inline-style",
   "private": true,
   "scripts": {
     "b": "rollup --config rollup.config.js && tsc -p tsconfig.types.json",
@@ -44,6 +44,6 @@
     "vjj": "^1.0.12"
   },
   "dependencies": {
-    "a-type-of-js": "^2.0.1"
+    "@mudbean/is": "^2.0.5"
   }
 }

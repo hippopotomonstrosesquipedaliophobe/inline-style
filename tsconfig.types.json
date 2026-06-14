@@ -4,7 +4,7 @@
     "emitDeclarationOnly": true,
     "declaration": true,
     "rootDir": "src",
-    "declarationDir": "dist/es/types"
+    "declarationDir": "dist/es"
   },
   "exclude": ["node_modules", "test", "dist"]
 }

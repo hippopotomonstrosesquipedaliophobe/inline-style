@@ -1,4 +1,4 @@
-# a element inline style
+# @mudbean/inline-style
 
 一个简单的为 html 原属节点设置行内样式和移除行内样式的（两）函数
 
@@ -7,7 +7,7 @@
 ## 安装
 
 ```sh
-npm install --save a-element-inline-style
+npm install --save @mudbean/inline-style
 ```
 
 ## 使用
@@ -15,7 +15,7 @@ npm install --save a-element-inline-style
 设置行内样式
 
 ```ts
-import { setStyle } from 'a-element-inline-style';
+import { setStyle } from '@mudbean/inline-style';
 
 setStyle(document.body, {
   width: '100%',
@@ -26,9 +26,15 @@ setStyle(document.body, {
 移除行内样式
 
 ```ts
-import { removeStyle } from 'a-element-inline-style';
+import { removeStyle } from '@mudbean/inline-style';
 
 removeStyle(document.body, ['width', '--custom-width']);
 ```
 
 属性命名请使用*小驼峰*
+
+## 状态
+
+此软件包是 `@mudbean` 生态系统的一部分。
+它使用严格的 TypeScript 编写，并通过 Rollup 构建进行验证。
+虽然单元测试较少，但 API 稳定，并在生产环境中大量使用。
