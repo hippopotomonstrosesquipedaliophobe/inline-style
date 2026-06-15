@@ -11,7 +11,7 @@
 //   }
 // }
 
-import { isBusinessEmptyString, isUndefined } from '@mudbean/is';
+import { isBusinessEmptyString, isUndefined } from '@vvi/is';
 
 /**
  * ## 为节点元素设置标准样式

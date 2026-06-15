@@ -1,4 +1,8 @@
-# @mudbean/inline-style
+# @vvi/inline-style
+
+## 1.0.5 (2026-6-15)
+
+- 维护依赖信息
 
 ## 1.0.4 (2026-6-14)
 

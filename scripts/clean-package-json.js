@@ -55,6 +55,7 @@ packageJson = {
     '行内样式',
     '简单写入样式',
     'mudbean',
+    'vvi',
   ],
   homepage: 'https://npm.lmssee.com/inline-style',
   dependencies,

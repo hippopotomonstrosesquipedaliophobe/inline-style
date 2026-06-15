@@ -1,6 +1,6 @@
 {
-  "name": "@mudbean/inline-style",
-  "version": "1.0.4",
+  "name": "@vvi/inline-style",
+  "version": "1.0.5",
   "type": "module",
   "private": true,
   "scripts": {
@@ -44,6 +44,6 @@
     "vjj": "^1.0.12"
   },
   "dependencies": {
-    "@mudbean/is": "^2.0.5"
+    "@vvi/is": "^2.0.5"
   }
 }
