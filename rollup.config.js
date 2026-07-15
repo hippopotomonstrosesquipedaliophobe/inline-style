@@ -4,7 +4,7 @@ import commonjs from '@rollup/plugin-commonjs';
 // import terser from '@rollup/plugin-terser';
 // import cleanup from 'rollup-plugin-cleanup';
 import copy from 'rollup-plugin-copy';
-import { external } from '@qqi/rollup-external';
+import { external } from '@vvi/rollup-external';
 
 export default {
   input: './src/index.ts',
