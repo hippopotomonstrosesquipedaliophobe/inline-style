@@ -17,7 +17,7 @@ const dependencies = packageJson.dependencies;
   'dependencies',
   'packageManager',
   'jja',
-  "type"
+  'type',
 ].forEach(key => delete packageJson[key]);
 const esPrefix = 'es'; // es 前缀
 const cjsPrefix = 'cjs'; // cjs 前缀
@@ -28,11 +28,10 @@ const distParentPath = getDirectoryBy('dist', 'directory');
 packageJson = {
   ...packageJson,
   main: cjsPrefix + '/index.js', // 旧版本 CommonJs 入口
-  // module: esPrefix + '/index.js', // 旧版本 ESM 入口
   types: dtsPrefix + '/index.d.ts', // 旧版本类型入口
   author: {
     name: '泥豆君',
-    email: 'Mr.MudBean@outlook.com',
+    email: 'MudBean@outlook.com',
     url: 'https://mudbean.cn',
   },
   description: '设置 HTML 元素节点行内样式',
@@ -56,18 +55,17 @@ packageJson = {
     'inline style',
     '行内样式',
     '简单写入样式',
-    'mudbean',
     'vvi',
   ],
-  homepage: 'https://npm.lmssee.com/inline-style',
+  homepage: 'https://npms.gleanings.cn/inline-style',
   dependencies,
   bugs: {
-    url: 'https://github.com/MrMudBean/inline-style/issues',
-    email: 'Mr.MudBean@outlook.com',
+    url: 'https://github.com/hippopotomonstrosesquipedaliophobe/inline-style/issues',
+    email: 'MudBean@outlook.com',
   },
   repository: {
     type: 'git',
-    url: 'git+https://github.com/MrMudBean/inline-style.git',
+    url: 'git+https://github.com/hippopotomonstrosesquipedaliophobe/inline-style.git',
   },
   publishConfig: {
     access: 'public',

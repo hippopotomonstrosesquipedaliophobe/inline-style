@@ -4,6 +4,10 @@
 
 可使用自定义 css 属性
 
+> [!Caution]
+>
+> 迁移到 [@vvi/browser/inline-style](https://www.npmjs.com/package/@vvi/browser)
+
 ## 安装
 
 ```sh
